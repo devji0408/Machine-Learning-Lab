@@ -17,6 +17,10 @@ All programs are written with proper structure including dataset creation, train
 * Support Vector Machine (SVM)
 
 ---
+## 🔹 Unsupervised Learning Algorithms
+- K-Means Clustering
+- Hierarchical Clustering
+
 
 ## 🏠 Mini Project
 
@@ -46,6 +50,8 @@ Machine-Learning-Lab/
 ├── knn.py
 ├── svm.py
 ├── house_price_prediction.py
+├── kmeans.py
+├── hierarchical.py
 └── README.md
 ```
 
