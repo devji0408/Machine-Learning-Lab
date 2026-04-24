@@ -1,9 +1,22 @@
+# Random Forest Classifier
+
 from sklearn.ensemble import RandomForestClassifier
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import accuracy_score
 
-X = [[1],[2],[3],[4]]
-y = [0,0,1,1]
+# Dataset
+X = [[1],[2],[3],[4],[5],[6]]
+y = [0,0,0,1,1,1]
 
-model = RandomForestClassifier()
-model.fit(X,y)
+# Split
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3)
 
-print("Prediction:", model.predict([[2.5]]))
+# Model
+model = RandomForestClassifier(n_estimators=10)
+model.fit(X_train, y_train)
+
+# Prediction
+y_pred = model.predict(X_test)
+
+print("Predictions:", y_pred)
+print("Accuracy:", accuracy_score(y_test, y_pred))
