@@ -1,17 +1,29 @@
+# House Price Prediction using Linear Regression
+
 import pandas as pd
+from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 
+# Dataset
 data = {
-    "Area":[1000,1500,2000,2500],
-    "Price":[10,15,20,25]
+    "Area":[1000,1200,1500,1800,2000,2200],
+    "Bedrooms":[2,2,3,3,4,4],
+    "Price":[20,25,30,35,40,45]
 }
 
 df = pd.DataFrame(data)
 
-X = df[["Area"]]
+# Features & Target
+X = df[["Area","Bedrooms"]]
 y = df["Price"]
 
-model = LinearRegression()
-model.fit(X,y)
+# Split
+X_train, X_test, y_train, y_test = train_test_split(X,y,test_size=0.2)
 
-print("Price for 1800 area:", model.predict([[1800]]))
+# Model
+model = LinearRegression()
+model.fit(X_train, y_train)
+
+# Prediction
+prediction = model.predict([[1600,3]])
+print("Predicted Price:", prediction)
