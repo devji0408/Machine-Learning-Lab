@@ -1,13 +1,13 @@
-# 🤖 Machine Learning Lab Programs
+# 🤖 Machine Learning Projects Repository
 
-This repository contains implementation of fundamental Machine Learning algorithms using Python and Scikit-learn.
-All programs are written with proper structure including dataset creation, training, testing, and evaluation.
+This repository contains a collection of Machine Learning algorithms and real-world mini projects implemented using Python and Scikit-learn.
+It covers both **Supervised** and **Unsupervised Learning** techniques along with practical applications.
 
 ---
 
 ## 📚 Topics Covered
 
-### 🔹 Supervised Learning Algorithms
+### 🔹 Supervised Learning
 
 * Linear Regression
 * Logistic Regression
@@ -16,15 +16,27 @@ All programs are written with proper structure including dataset creation, train
 * K-Nearest Neighbors (KNN)
 * Support Vector Machine (SVM)
 
+### 🔹 Unsupervised Learning
+
+* K-Means Clustering
+* Hierarchical Clustering
+
 ---
-## 🔹 Unsupervised Learning Algorithms
-- K-Means Clustering
-- Hierarchical Clustering
 
+## 🚀 Projects Included
 
-## 🏠 Mini Project
-
-* House Price Prediction using Linear Regression
+* 🏠 House Price Prediction
+* 🚗 Car Price Prediction
+* ⚡ Electricity Bill Prediction
+* 🎓 Student Performance Prediction
+* 💳 Credit Card Fraud Detection
+* 📧 Email Spam Detection
+* 🌦️ Weather Prediction System
+* 🛒 Product Price Prediction
+* 🧠 Disease Prediction System
+* 🎬 Movie Recommendation System
+* 🔁 Recommendation System
+* ⚠️ Anomaly Detection (Isolation Forest)
 
 ---
 
@@ -38,10 +50,10 @@ All programs are written with proper structure including dataset creation, train
 
 ---
 
-## 📂 File Structure
+## 📂 Project Structure
 
-```
-Machine-Learning-Lab/
+```id="projstruct1"
+Machine-Learning-Projects/
 │
 ├── linear_regression.py
 ├── logistic_regression.py
@@ -49,9 +61,27 @@ Machine-Learning-Lab/
 ├── random_forest.py
 ├── knn.py
 ├── svm.py
-├── house_price_prediction.py
+│
 ├── kmeans.py
 ├── hierarchical.py
+│
+├── house_price_prediction.py
+├── car_price-predictions.py
+├── product_price_predictions.py
+├── ML_based Electricity_bill_predictions.py
+│
+├── student-performance_predictions.py
+├── diseases_predictions.py
+│
+├── Credit_card_fraud_Detections.py
+├── Email_spam_detector.py
+├── Anamoly-detections.py
+│
+├── Movie_Recommendations_system.py
+├── Recommmendations_system.py
+│
+├── Weather_predictions_system.py
+│
 └── README.md
 ```
 
@@ -59,52 +89,61 @@ Machine-Learning-Lab/
 
 ## ⚙️ Installation & Setup
 
-1. Install Python (3.x)
+1. Install Python (3.x recommended)
+
 2. Install required libraries:
 
-```
+```id="installcmd2"
 pip install numpy pandas scikit-learn matplotlib
 ```
 
-3. Run any program:
+3. Run any file:
 
-python file_name.py
-
-
-## 📊 Program Features
-
-* Use of real-like datasets
-* Train-test split for model evaluation
-* Accuracy calculation (for classification models)
-* Data visualization (Linear Regression)
-* Clean and readable code with comments
+```id="runfile2"
+python filename.py
+```
 
 ---
 
-## 📈 Example Output
+## 📊 Key Features
 
-* Salary prediction using Linear Regression
-* Pass/Fail prediction using Logistic Regression
-* Classification using Decision Tree, Random Forest, KNN, SVM
-* House price prediction based on area and number of bedrooms
+* Implementation of core ML algorithms
+* Real-world datasets and use cases
+* Train-test split for better evaluation
+* Accuracy calculation for classification models
+* Data visualization for better understanding
+* Clean and well-commented code
+
+---
+
+## 📈 Applications
+
+This repository demonstrates practical applications of Machine Learning such as:
+
+* Price prediction systems
+* Fraud detection
+* Spam filtering
+* Recommendation systems
+* Performance analysis
+* Anomaly detection
 
 ---
 
 ## 🎯 Learning Outcomes
 
-* Understanding of supervised learning algorithms
-* Model training and prediction
-* Performance evaluation using accuracy
-* Practical implementation of ML concepts
+* Strong understanding of ML algorithms
+* Hands-on project development
+* Model training and evaluation
+* Real-world problem solving using ML
 
 ---
 
 ## 👨‍💻 Author
 
-Panchdev Maddheshiya
+**Panchdev Maddheshiya**
 
 ---
 
 ## 📌 Note
 
-This repository is created for academic purposes as part of Machine Learning Lab work.
+This repository is created for academic purposes as part of B.Tech Computer Science and Engineering coursework and practical lab submissions.
